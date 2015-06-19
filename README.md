@@ -5,9 +5,10 @@ Start point to build console application in PHP
 
 ## Getting Started
 ```bash
-git clone git@github.com:gianarb/console-skeleton-app
-cd console-skeleton-app
-bin/console
+$ git clone git@github.com:gianarb/console-skeleton-app
+$ composer install
+$ cd console-skeleton-app
+$ bin/console
 ```
 This is the entrypoint of this application, the output is
 ```bash
