@@ -20,9 +20,8 @@ Start point to build console application in PHP
 
 ## Getting Started
 ```bash
-$ git clone git@github.com:gianarb/console-skeleton-app
-$ composer install
-$ cd console-skeleton-app
+$ composer create-project gianarb/console-skeleton app 1.0.0
+$ cd app
 $ bin/console
 ```
 This is the entrypoint of this application, the output is
@@ -47,4 +46,3 @@ Skeleton App, version 0.0.1
 
 Hi John, you have call me. Now this is an awesome day!
 ```
-
