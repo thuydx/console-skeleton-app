@@ -2,6 +2,21 @@
 Start point to build console application in PHP
 
 ## Foldering
+```
+├── bin
+│   └── console.php
+├── composer.json
+├── composer.lock
+├── config
+│   └── routes.php
+├── src
+│   └── Command
+│       ├── Conf.php
+│       ├── Database.php
+│       └── Download.php
+└── vendor
+    └── ...
+```
 
 ## Getting Started
 ```bash
