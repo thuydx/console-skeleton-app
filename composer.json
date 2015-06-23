@@ -3,6 +3,7 @@
     "description": "PHP Skeleton to build console application",
     "require": {
         "zendframework/zend-console": "^2.5",
+        "zendframework/zend-stdlib": "^2.5",
         "zfcampus/zf-console": "1.*"
     },
     "require-dev": {
