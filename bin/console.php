@@ -4,13 +4,18 @@ require __DIR__.'/../vendor/autoload.php';
 use Zend\Console\Console;
 use ZF\Console\Application;
 use ZF\Console\Dispatcher;
+use Zend\Stdlib\Glob;
+use Zend\Stdlib\ArrayUtils;
 
-$version = '0.0.1';
+$config = [];
+foreach (Glob::glob('config/{{*}}{{,*.local}}.php', Glob::GLOB_BRACE) as $file) {
+    $config = ArrayUtils::merge($config, include $file);
+}
 
 $application = new Application(
-    'Skeleton App',
-    $version,
-    include __DIR__ . '/../config/routes.php',
+    $config['app'],
+    $config['version'],
+    $config['routes'],
     Console::getInstance(),
     new Dispatcher()
 );
