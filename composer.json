@@ -2,8 +2,11 @@
     "name": "gianarb/console-skeleton",
     "description": "PHP Skeleton to build console application",
     "require": {
+        "php-di/php-di": "~5.0",
+        "zendframework/zend-servicemanager": "^2.5",
         "zendframework/zend-console": "^2.5",
         "zendframework/zend-stdlib": "^2.5",
+        "php-di/php-di": "~5.0",
         "zfcampus/zf-console": "1.*"
     },
     "require-dev": {

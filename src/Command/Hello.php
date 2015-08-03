@@ -6,8 +6,9 @@ use Zend\Console\Adapter\AdapterInterface;
 
 class Hello
 {
-    public static function run(Route $route, AdapterInterface $console)
+    public static function run(Route $route, AdapterInterface $console, $container)
     {
+        $serviceManager = $container->get("service_manager");
         $name = $route->getMatchedParam("name", "@gianarb");
         $console->writeLine("Hi {$name}, you have call me. Now this is an awesome day!");
     }
