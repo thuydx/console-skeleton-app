@@ -16,3 +16,7 @@ This is a proposal of foldering for this application.
 └── vendor
     └── ...
 ```
+
+### Navigation
+
+* Back to [Getting Started](/docs/intro.md)
