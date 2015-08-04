@@ -4,6 +4,7 @@ namespace App\Core;
 use ZF\Console\Dispatcher as ZfDispatcher;
 use ZF\Console\Route;
 use Zend\Console\Adapter\AdapterInterface as ConsoleAdapter;
+use Zend\Console\ColorInterface as Color;
 
 class Dispatcher extends ZfDispatcher
 {
