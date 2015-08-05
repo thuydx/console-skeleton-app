@@ -54,8 +54,12 @@ class ApplicationTest extends PHPUnit_Framework_TestCase
         );
     }
 
-    public function testRun()
+    public function testNameOfApplicationIntoTheOutput()
     {
+        ob_start();
         $this->application->run();
+        $content = ob_get_clean();
+
+        $this->assertRegExp("/this is my app/", $content);
     }
 }
