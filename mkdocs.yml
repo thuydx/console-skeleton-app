@@ -4,6 +4,7 @@ site_description: Console Skeleton Application for PHP project
 repo_url: https://github.com/gianarb/console-skeleton-app/
 
 pages:
+- ['index.md', 'Home']
 - ['intro.md', 'Intro']
 - ['folderine.md', 'Foldering']
 
