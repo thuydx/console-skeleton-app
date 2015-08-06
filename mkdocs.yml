@@ -1,0 +1,11 @@
+site_name: Console Skeleton App
+site_description: Console Skeleton Application for PHP project 
+
+repo_url: https://github.com/gianarb/console-skeleton-app/
+
+pages:
+- ['intro.md', 'Intro']
+- ['folderine.md', 'Foldering']
+
+copyright: Copyright &copy; 2015, <a href="https://github.com/gianarb">Gianluca Arbezzano</a>.
+google_analytics: ["UA-60029542-2", "http://console-skeleton-app.readthedocs.org/en/stable/"]
