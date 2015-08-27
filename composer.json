@@ -10,8 +10,7 @@
         "zfcampus/zf-console": "1.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.7",
-        "zendframework/zend-test": "^2.5"
+        "phpunit/phpunit": "^4.7"
     },
     "autoload": {
         "psr-4": {
