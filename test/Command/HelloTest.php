@@ -7,24 +7,25 @@ use PHPUnit_Framework_TestCase;
 
 class HelloTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @var Hello
-     */
-    private $command;
-
-    protected function setUp()
+    public function setUp()
     {
-        $this->command = new Hello();
+        $this->route = $this->getMockBuilder('ZF\Console\Route')
+            ->disableOriginalConstructor()
+            ->getMock();
+
+        $this->consoleAdapter = $this->getMock('Zend\Console\Adapter\AdapterInterface');
+
+        $this->container = $this->getMock('Zend\ServiceManager\ServiceLocatorInterface');
+
+        $this->helloCommand = new Hello();
     }
 
-    public function testRun()
+    public function testHelloCommandShouldRun()
     {
-        $route          = $this->getMockBuilder('ZF\Console\Route')
-                               ->disableOriginalConstructor()
-                               ->getMock();
-        $consoleAdapter = $this->getMock('Zend\Console\Adapter\AdapterInterface');
-        $container = $this->getMock('Zend\ServiceManager\ServiceLocatorInterface');
-
-        $this->command->run($route, $consoleAdapter, $container);
+        $this->helloCommand->run(
+            $this->route,
+            $this->consoleAdapter,
+            $this->container
+        );
     }
 }
